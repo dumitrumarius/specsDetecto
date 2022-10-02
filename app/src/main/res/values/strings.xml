@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">specsDetecto</string>
+    <string name="setPwd">Set password</string>
+    <string name="savePwd">Save</string>
+    <string name="Pwd">Password</string>
+    <string name="confirmPwd">Confirm password</string>
+    <string name="textNoMatchPwd">The passwords do not match!</string>
+    <string name="textPwdEmpty">The password fields cannot be empty.</string>
+</resources>
