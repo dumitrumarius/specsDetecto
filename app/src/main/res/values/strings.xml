@@ -6,4 +6,7 @@
     <string name="confirmPwd">Confirm password</string>
     <string name="textNoMatchPwd">The passwords do not match!</string>
     <string name="textPwdEmpty">The password fields cannot be empty.</string>
+    <string name="deviceSpecs">Device specifications</string>
+    <string name="unknown">Unknown</string>
+    <string name="brandText">Brand</string>
 </resources>
