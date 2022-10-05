@@ -9,7 +9,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="180dp"
-        android:background="@color/white"
         android:layout_marginTop="30dp"
         android:id="@+id/logo_ll"
         app:layout_constraintTop_toTopOf="parent"
