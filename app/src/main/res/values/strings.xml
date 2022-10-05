@@ -9,4 +9,17 @@
     <string name="deviceSpecs">Device specifications</string>
     <string name="unknown">Unknown</string>
     <string name="brandText">Brand</string>
+    <string name="modelText">Model</string>
+    <string name="cpuModelText">Cpu Model</string>
+    <string name="screenSizeText">Screen Size</string>
+    <string name="screenDimensionText">Screen Dimension</string>
+    <string name="batteryCapacityText">Battery Capacity</string>
+    <string name="ramSizeText">Ram Size</string>
+    <string name="gpuModelText">Gpu Model</string>
+    <string name="storageText">Storage</string>
+    <string name="cameraMpText">Camera MP</string>
+    <string name="frontCamMpText">Front Camera MP</string>
+    <string name="simStateText">Sim</string>
+    <string name="androidVersionText">Android Version</string>
+    <string name="warrantyText">Warranty</string>
 </resources>

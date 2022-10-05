@@ -46,6 +46,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:paddingBottom="325dp"
             android:orientation="vertical">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -72,25 +74,25 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
-                android:orientation="horizontal"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/gradient_single_line">
+                android:background="@drawable/gradient_single_line"
+                android:orientation="horizontal">
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/model_icon"
                     android:layout_gravity="center_vertical"
                     android:layout_marginStart="20dp"
-                    android:contentDescription="@string/brandText" />
+                    android:contentDescription="@string/modelText"
+                    android:src="@drawable/model_icon" />
                 <TextView
+                    android:id="@+id/getModel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="16sp"
-                    android:textColor="@color/white"
-                    android:text="@string/unknown"
-                    android:layout_marginStart="100dp"
                     android:layout_gravity="center_vertical|center_horizontal"
-                    android:id="@+id/getModel"/>
+                    android:layout_marginStart="100dp"
+                    android:text="@string/unknown"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -106,7 +108,7 @@
                     android:paddingTop="15dp"
                     android:paddingBottom="15dp"
                     android:layout_marginStart="20dp"
-                    android:contentDescription="@string/brandText" />
+                    android:contentDescription="@string/cpuModelText" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -126,12 +128,12 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/cpu_icon"
+                    android:src="@drawable/screen_size_icon"
                     android:layout_gravity="center_vertical"
-                    android:paddingTop="15dp"
-                    android:paddingBottom="15dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
                     android:layout_marginStart="20dp"
-                    android:contentDescription="@string/brandText" />
+                    android:contentDescription="@string/screenSizeText" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -151,12 +153,12 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/cpu_icon"
+                    android:src="@drawable/screen_size_inches"
                     android:layout_gravity="center_vertical"
-                    android:paddingTop="15dp"
-                    android:paddingBottom="15dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
                     android:layout_marginStart="20dp"
-                    android:contentDescription="@string/brandText" />
+                    android:contentDescription="@string/screenDimensionText" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -176,12 +178,12 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/cpu_icon"
+                    android:src="@drawable/battery_icon"
                     android:layout_gravity="center_vertical"
                     android:paddingTop="15dp"
                     android:paddingBottom="15dp"
                     android:layout_marginStart="20dp"
-                    android:contentDescription="@string/brandText" />
+                    android:contentDescription="@string/batteryCapacityText" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -201,12 +203,12 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/cpu_icon"
+                    android:src="@drawable/ram_memory_icon"
                     android:layout_gravity="center_vertical"
                     android:paddingTop="15dp"
                     android:paddingBottom="15dp"
                     android:layout_marginStart="20dp"
-                    android:contentDescription="@string/brandText" />
+                    android:contentDescription="@string/ramSizeText" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -226,12 +228,12 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/cpu_icon"
+                    android:src="@drawable/gpu_icon"
                     android:layout_gravity="center_vertical"
                     android:paddingTop="15dp"
                     android:paddingBottom="15dp"
                     android:layout_marginStart="20dp"
-                    android:contentDescription="@string/brandText" />
+                    android:contentDescription="@string/gpuModelText" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -251,12 +253,12 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/cpu_icon"
+                    android:src="@drawable/storage_icon"
                     android:layout_gravity="center_vertical"
                     android:paddingTop="15dp"
                     android:paddingBottom="15dp"
                     android:layout_marginStart="20dp"
-                    android:contentDescription="@string/brandText" />
+                    android:contentDescription="@string/storageText" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -276,12 +278,12 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/cpu_icon"
+                    android:src="@drawable/camera_icon"
                     android:layout_gravity="center_vertical"
                     android:paddingTop="15dp"
                     android:paddingBottom="15dp"
                     android:layout_marginStart="20dp"
-                    android:contentDescription="@string/brandText" />
+                    android:contentDescription="@string/cameraMpText" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -301,12 +303,12 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/cpu_icon"
+                    android:src="@drawable/camera_icon"
                     android:layout_gravity="center_vertical"
                     android:paddingTop="15dp"
                     android:paddingBottom="15dp"
                     android:layout_marginStart="20dp"
-                    android:contentDescription="@string/brandText" />
+                    android:contentDescription="@string/frontCamMpText" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -326,12 +328,12 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/cpu_icon"
+                    android:src="@drawable/sim_icon"
                     android:layout_gravity="center_vertical"
                     android:paddingTop="15dp"
                     android:paddingBottom="15dp"
                     android:layout_marginStart="20dp"
-                    android:contentDescription="@string/brandText" />
+                    android:contentDescription="@string/simStateText" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -351,12 +353,12 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/cpu_icon"
+                    android:src="@drawable/android_icon"
                     android:layout_gravity="center_vertical"
                     android:paddingTop="15dp"
                     android:paddingBottom="15dp"
                     android:layout_marginStart="20dp"
-                    android:contentDescription="@string/brandText" />
+                    android:contentDescription="@string/androidVersionText" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -376,12 +378,12 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/cpu_icon"
+                    android:src="@drawable/warranty_icon"
                     android:layout_gravity="center_vertical"
                     android:paddingTop="15dp"
                     android:paddingBottom="15dp"
                     android:layout_marginStart="20dp"
-                    android:contentDescription="@string/brandText" />
+                    android:contentDescription="@string/warrantyText" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -396,6 +398,7 @@
                 android:layout_height="50dp"
                 android:layout_width="50dp"
                 android:layout_marginEnd="0dp"
+                android:layout_gravity="end"
                 android:alpha="0"
                 android:id="@+id/editSpecsHiddenButton"
                 />
